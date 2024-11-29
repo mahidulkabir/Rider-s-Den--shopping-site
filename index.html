@@ -16,7 +16,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <!-- Taiwind custom color commands  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'colr-btn-primary': '#da373d',
+            }
+          }
+        }
+      }
+    </script>
     <title>Rider's Zone :: Home Page</title>
     <style>
       .font-poppins{
@@ -25,7 +37,7 @@
     </style>
   </head>
   <body class="font-poppins">
-    <header>
+    <header class="md:container md:mx-auto">
       <nav>
         <div class="navbar bg-base-100">
           <div class="flex-1">
@@ -56,7 +68,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl font-bold">Raider's Den</a>
+            <a class="btn btn-ghost text-3xl font-bold">Raider's Den</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-medium">
@@ -67,12 +79,12 @@
             </ul>
           </div>
           <div >
-            <a class="btn bg-[#E76F51] text-white">Log In</a>
+            <a class="btn bg-colr-btn-primary text-white">Log In</a>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="md:container md:mx-auto"></main>
     <footer></footer>
   </body>
 </html>
