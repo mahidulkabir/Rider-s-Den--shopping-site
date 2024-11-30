@@ -13,25 +13,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font :: Poppins  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Taiwind custom color commands  -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
-              'colr-btn-primary': '#da373d',
-            }
-          }
-        }
-      }
+              clifford: "#da373d",
+              "colr-btn-primary": "#da373d",
+              "colr-btn-slide-bg": "rgba(231, 111, 81, 0.10)",
+            },
+          },
+        },
+      };
     </script>
     <title>Rider's Zone :: Home Page</title>
     <style>
-      .font-poppins{
+      .font-poppins {
         font-family: "Poppins", sans-serif;
       }
     </style>
@@ -74,24 +78,44 @@
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-medium">
               <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
-          <div >
+          <div>
             <a class="btn bg-colr-btn-primary text-white">Log In</a>
           </div>
         </div>
       </nav>
       <!-- Container of carousal or slides as banner -->
-      <div class="carousel w-full">
+      <div class="carousel bg-colr-btn-slide-bg h-[550px] w-full">
         <!-- slid 1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <img
-            src="./biker-zone-resources/images/slider/bike1.png"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <div class="flex flex-col lg:flex-row gap-5 lg:gap-20 p-16 lg:p-24">
+            <div class="space-y-7 flex-1">
+              <h2 class="text-4xl lg:text-6xl font-bold">
+                Ride-on R15 V4 <br />
+                with Smile
+              </h2>
+              <p class="text-lg font-light">
+                The Yamaha R15 bike is a stylish, high-performance sports
+                motorcycle known for speed and agility.
+              </p>
+              <button class="btn bg-colr-btn-primary text-white">
+                Purchase
+              </button>
+            </div>
+            <div class="flex-1">
+              <img
+                src="./biker-zone-resources/images/slider/bike1.png"
+                class="w-[450px] "
+              />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
@@ -99,9 +123,12 @@
         <!-- slid 2 -->
         <div id="slide2" class="carousel-item relative w-full">
           <img
-          src="./biker-zone-resources/images/slider/bike2.png"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            src="./biker-zone-resources/images/slider/bike2.png"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
@@ -109,9 +136,12 @@
         <!-- slid 3 -->
         <div id="slide3" class="carousel-item relative w-full">
           <img
-          src="./biker-zone-resources/images/slider/bike3.png"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            src="./biker-zone-resources/images/slider/bike3.png"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
@@ -119,9 +149,12 @@
         <!-- slid 4 -->
         <div id="slide4" class="carousel-item relative w-full">
           <img
-          src="./biker-zone-resources/images/slider/bike4.png"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            src="./biker-zone-resources/images/slider/bike4.png"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
